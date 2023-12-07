@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 mocha"
+    "coverage": "npx c8 --x \"src/.internal/**\" --x \"test/**\" --reporter lcov --reporter text npm test"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,15 @@
   "dependencies": {
     "c8": "^8.0.1",
     "chai": "^4.3.10",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.30.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.31.11",
+    "mocha-lcov-reporter": "^1.3.0"
   },
   "devDependencies": {
     "coveralls": "^3.1.1",
