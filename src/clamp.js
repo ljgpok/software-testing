@@ -28,4 +28,4 @@ function clamp(number, lower, upper) {
   return number
 }
 
-module.exports = clamp
+export default clamp

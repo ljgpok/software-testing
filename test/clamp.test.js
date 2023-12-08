@@ -1,6 +1,6 @@
-var chai = require('chai');
-var clamp = require('../clamp.js');
-var expect = chai.expect;
+import chai from 'chai';
+import clamp from '../src/clamp.js';
+const expect = chai.expect;
 
 describe('Clamp', () => {
     it('does not modify values between the bounds', () => {
